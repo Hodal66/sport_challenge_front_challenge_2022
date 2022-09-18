@@ -11,7 +11,7 @@ function NavBar() {
     <div>
       <nav className="">
         <div className="container nav_container">
-          <Link className="logo_link">
+          <Link className="logo_link" onClick={() => setIsNavShowing(false)}>
             <img src={Logo} alt="my logo" className="mylogo" />
           </Link>
 

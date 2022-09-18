@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import About from "./pages/about/About";
 import Gallery from "./pages/gallery/Gallery";
@@ -12,12 +12,14 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <NavBar />
-        <About />
-        <Home />
-        <Gallery />
-        <Plans />
-        <Trainers />
-        <NotFound />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="gallery" element={<Gallery />} />
+          <Route path="about" element={<About />} />
+          <Route path="notFound" element={<NotFound />} />
+          <Route path="plans" element={<Plans />} />
+          <Route path="trainers" element={<Trainers />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
