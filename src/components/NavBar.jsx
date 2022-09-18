@@ -29,26 +29,7 @@ function NavBar() {
                 </li>
               );
             })}
-            {/* <NavLink path="/" className={({ isActive }) => (isActive ? "active-nav" : "")}>
-              <a href="#home">Home</a>
-            </NavLink>
-            <NavLink path="/">
-              <a href="#about" className={({ isActive }) => (isActive ? "active-nav" : "")}>About</a>
-            </NavLink>
-            <NavLink path="/" className={({ isActive }) => (isActive ? "active-nav" : "")}>
-              <a href="#home" >Gallery</a>
-            </NavLink>
-            <NavLink path="/" className={({ isActive }) => (isActive ? "active-nav" : "")}>
-              <a href="#home">Plans</a>
-            </NavLink>
-            <NavLink path="/" className={({ isActive }) => (isActive ? "active-nav" : "")}>
-              <a href="#home">Trainers</a>
-            </NavLink>
-            <NavLink path="/" >
-              <a href="#home">Contacts</a>
-            </NavLink> */}
           </ul>
-
           <button
             className="nav_toggle_btn"
             onClick={() => setIsNavShowing((prev) => !prev)}
