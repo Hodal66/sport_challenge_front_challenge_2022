@@ -75,3 +75,43 @@ h4{
     background-color: var(--color-secondary);
     color:var(--color-gray-600);
 }
+
+
+
+
+/* =============Values=============================================== */
+
+.values__container{
+    display:grid;
+    grid-template-columns: 38% 50%;
+    gap:12%;
+    margin-top:10rem;
+   
+}
+.values__image{
+    filter:saturate(0.25);
+    transition:var(--transition);
+}
+
+.values__image:hover{
+    filter:saturate(1)
+}
+.values__right >p{
+    margin:0.5rem 0 2.5rem;
+    font-size:11px;
+}
+.values__wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:3rem 2rem;
+}
+.card.values__value{
+    padding-top: 3.5rem;
+    text-align: left;
+    position:relative;
+}
+.card.values__value span{
+    position:absolute;
+    top:-1.5rem;
+
+}
