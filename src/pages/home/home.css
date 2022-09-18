@@ -50,6 +50,28 @@ h4{
 .main__header-image{
     position:relative;
 }
-.main__header:hover .main__header-circle{
+.main__header-right:hover .main__header-circle{
     filter:blur(10px);
+}
+
+/* =============PROGRAMS=============================================== */
+
+.programs{
+    margin-top:4rem;
+}
+.programs__wrapper{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2rem;
+    margin-top: 4rem;
+}
+.programs__program a{
+    margin-top: 2rem;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.programs__program:hover a{
+    background-color: var(--color-secondary);
+    color:var(--color-gray-600);
 }
