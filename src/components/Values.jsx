@@ -24,7 +24,7 @@ function Values() {
               {values.map(({ id, icon, title, desc }) => {
                 return (
                   <>
-                    <Card className="values__value" key={id}>
+                    <Card key={id} className="values__value">
                       <span>{icon}</span>
                       <h4>{title}</h4>
                       <small>{desc}</small>

@@ -79,7 +79,7 @@ h4{
 
 
 
-/* =============Values=============================================== */
+/* =============Values============================================== */
 
 .values__container{
     display:grid;
@@ -114,4 +114,121 @@ h4{
     position:absolute;
     top:-1.5rem;
 
+}
+
+
+
+
+
+/* =============FAQs============================================== */
+
+.faqs__container{
+    margin-top:4rem;
+
+}
+.faq{
+    background:var(--color-gray-400);
+    padding:1rem;
+    border-radius: 1rem;
+    cursor:pointer;
+}
+.faq div{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.faq__icon{
+    background:transparent;
+    color:var(--color-gray-100);
+    font-size:1.5rem;
+}
+.faqs__wrapper{
+    padding-top: 2rem;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:3rem;
+}
+.faq p{
+    font-size:0.8rem;
+    margin-top: 0.5rem;
+    color:var(--color-gray-300)
+}
+
+
+
+
+/* =============TESTMONIALS============================================== */
+
+.testmonials{
+    width:40rem;
+    margin-inline: auto;
+
+}
+.testmonial__head{
+    justify-content:center;
+}
+.card.testmonial{
+    position:relative;
+    text-align:left;
+    margin-top: 5rem;
+
+}
+.testmonial__avatar{
+    width:4rem;
+    height:4rem;
+    border-radius: 1.5rem;
+    overflow:hidden;
+    position: absolute;
+    border:2px solid transparent;
+    margin-top: -4rem;
+    left:calc(50% - 2rem);
+    box-shadow: 0 1.5rem 2rem rgba(74, 74, 137, 0.4);
+    transition:var(--transition);
+}
+.testmonial:hover .testmonial__avatar{
+    border-radius:50%;
+    border-color: var(--color-gray-400);
+}
+.testmonial__quote{
+    margin:1rem 0 2rem;
+    font-style: italic;
+    font-size:0.8rem;
+}
+.testmonial__quote:hover{
+    color:var(--color-secondary);
+    transform: skewY(3deg);
+    animation: ease-in 0;
+}
+.card small.testmonial__title{
+margin-top: 0.3rem;
+
+}
+/* .testimonial__btn-container{
+    width: fit-content;
+    margin:2.5rem auto 0;
+    display: flex;
+    align-items: center;
+    background-color:red;
+    margin: 9rem;
+    gap:1;
+
+} */
+.testmonial_btn_container{
+    width: fit-content;
+   
+    display: flex;
+    align-items: center;
+    margin: 1.5rem auto 0;
+    gap:1;
+    
+}
+.testmonial_btn{
+    background-color:transparent;
+    margin:0.5rem;
+    font-size:3rem;
+    
+}
+.testmonial_btn svg{
+    color: var(--color-primary);
 }
