@@ -1,6 +1,6 @@
-.mylogo{
-    width: 100px;
-    height: 50px;
+.mylogo,.logo{
+    width: 6rem;
+    display: block;
 }
 
 nav{
@@ -48,20 +48,10 @@ nav{
 
 
 
-/* .active-nav::after{
-    content:"";
-    display:block;
-    width:1.2rem;
-    height:1.2rem;
-    background:var(--color-primary);
-    position:absolute;
-    left:calc(50% - 0.6rem);
-    transform:rotate(45deg);
-    margin-top:0.9rem;
-} */
 
+ 
 /* Media screen for (medium and small screens) */
-@media screen and (max-width:800px){
+@media screen and (max-width:1024px){
   
     .nav_toggle_btn{
         display:inline-block;
@@ -73,7 +63,7 @@ nav{
     .nav_links{
         position:absolute;
         flex-direction: column;
-        top:100%;
+        top:80%;
         right:100px;
         gap:0;
 
@@ -86,9 +76,7 @@ nav{
         transform: rotateY(0deg);
         transform-origin:top;
     }
-    .nav_links li:hover{
-        background:red;
-    }
+   
     .nav_links li:nth-child(1){
         animation-delay:200ms;
     }
@@ -107,6 +95,9 @@ nav{
     }
     .nav_links li:nth-child(6){
         animation-delay:2s;
+    }
+    .nav_links li:hover{
+        background:red;
     }
 
     .nav_links li a{
@@ -146,5 +137,5 @@ p{
     border-radius:2rem;
 }
 .btn.sm{
-padding: 0.4rem;
+padding: 0.2rem;
 }

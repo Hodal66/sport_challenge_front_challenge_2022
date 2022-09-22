@@ -50,6 +50,381 @@ h4{
 .main__header-image{
     position:relative;
 }
-.main__header:hover .main__header-circle{
+.main__header-right:hover .main__header-circle{
     filter:blur(10px);
 }
+
+/* =============PROGRAMS=============================================== */
+
+.programs{
+    margin-top:14rem;
+  
+}
+.programs__wrapper{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2rem;
+    margin-top: 4rem;
+}
+.programs__program a{
+    margin-top: 2rem;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.programs__program:hover a{
+    background-color: var(--color-secondary);
+    color:var(--color-gray-600);
+}
+
+
+
+
+/* =============Values============================================== */
+
+.values__container{
+    
+    display:grid;
+    grid-template-columns: 38% 50%;
+    gap:12%;
+    margin-top:14rem;
+    margin-bottom:10rem;
+   
+}
+.values__image{
+    filter:saturate(0.25);
+    transition:var(--transition);
+}
+
+.values__image:hover{
+    filter:saturate(1)
+}
+.values__right >p{
+    margin:0.5rem 0 2.5rem;
+    font-size:11px;
+}
+.values__wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:3rem 2rem;
+}
+.card.values__value{
+    padding-top: 3.5rem;
+    text-align: left;
+    position:relative;
+}
+.card.values__value span{
+    position:absolute;
+    top:-1.5rem;
+
+}
+
+
+
+
+
+/* =============FAQs============================================== */
+
+.faqs__container{
+    margin-top:14rem;
+    
+
+}
+.faq{
+    background:var(--color-gray-400);
+    padding:1rem;
+    border-radius: 1rem;
+    cursor:pointer;
+}
+.faq div{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.faq__icon{
+    background:transparent;
+    color:var(--color-gray-100);
+    font-size:1.5rem;
+}
+.faqs__wrapper{
+    padding-top: 2rem;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:3rem;
+}
+.faq p{
+    font-size:0.8rem;
+    margin-top: 0.5rem;
+    color:var(--color-gray-300)
+}
+
+
+
+
+/* =============TESTMONIALS============================================== */
+
+.testmonials{
+    
+    margin-top: 14rem;
+    width:40rem;
+    margin-inline: auto;
+
+}
+.testmonial__head{
+    justify-content:center;
+}
+.card.testmonial{
+    position:relative;
+    text-align:left;
+    margin-top: 5rem;
+
+}
+.testmonial__avatar{
+    width:4rem;
+    height:4rem;
+    border-radius: 1.5rem;
+    overflow:hidden;
+    position: absolute;
+    border:2px solid transparent;
+    margin-top: -4rem;
+    left:calc(50% - 2rem);
+    box-shadow: 0 1.5rem 2rem rgba(74, 74, 137, 0.4);
+    transition:var(--transition);
+}
+.testmonial:hover .testmonial__avatar{
+    border-radius:50%;
+    border-color: var(--color-gray-400);
+}
+.testmonial__quote{
+    margin:1rem 0 2rem;
+    font-style: italic;
+    font-size:1rem;
+    font-family: Montserrat serif;
+
+}
+.testmonial__quote:hover{
+    color:var(--color-secondary);
+    transform: skewY(3deg);
+    animation: ease-in 0;
+}
+.card small.testmonial__title{
+margin-top: 0.3rem;
+color:var(--color-gray-300);
+
+}
+.testmonial_btn_container{
+    width: fit-content;
+   
+    display: flex;
+    align-items: center;
+    margin: 1.5rem auto 0;
+    gap:1;
+    
+}
+.testmonial_btn{
+    background-color:transparent;
+    margin:0.5rem;
+    font-size:3rem;
+    cursor:pointer;
+    
+}
+.testmonial_btn svg{
+    color: var(--color-primary);
+}
+
+
+
+
+
+
+/* =============FOOTER============================================== */
+
+footer{
+
+    background:var(--color-primary);
+    margin-top:14rem;
+
+    padding-right:2rem;
+    padding: 3rem;
+    font-size:0.9rem;
+    color:var(--color-gray-100);
+    margin-left:-10rem;
+    border-radius: 1rem;
+}
+
+.footer__container{
+    display:grid;
+    grid-template-columns:22rem 1fr 1fr 1fr;
+    gap:3rem;
+   width:100vw;
+
+}
+.footer__container article{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:0.7rem;
+}
+.footer__container article p{
+    margin-top: 0.7rem;
+}
+.footer__container article h4{
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+} 
+.footer__social{
+    margin-top:1rem;
+    gap:1rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer__social a{
+background:var(--color-gray-100);
+padding:0.5rem;
+height: 90%;
+border: 1px solid transparent;
+border-radius: 0.6rem;
+transition: var(--transition);
+
+}
+.footer__social svg{
+    color:var(--color-gray-600);
+}
+.footer__social a:hover{
+    background:transparent ;
+    border: 1px solid var(--color-gray-100);
+    
+}
+.footer__social svg:hover{
+    color:var(--color-secondary);
+}
+.footer__copyright{
+    color:var(--color-gray-100);
+    align-items:center;
+    justify-content:center;
+    border-top: 2px solid var(--color-primary-variant);
+    margin-top: 5rem;
+}
+
+
+/* ========================MEDIA QUERIES(Medium screen) ============================*/
+    @media screen and (max-width:1024px){
+      /* MAIN-HEADER */
+     
+      .main__header{
+        height: fit-content;
+        padding: 12rem 0;
+      }
+      .main__header-container{
+        gap:0;
+      }
+      .main__header-circle{
+        width:16rem;
+        height:16rem;
+      }
+         /* PROGRAMS */
+      .programs__wrapper{
+        grid-template-columns:1fr 1fr;
+    
+      }
+        /* VALUES */
+       .values__container{
+        grid-template-columns:1fr;
+        justify-content:center;
+        gap:4rem;
+      }
+      .values__wrapper{
+        gap:4rem 3rem;
+      }
+      .values__image{
+        display:none;
+      }
+        /* FAQS */
+       .faqs__wrapper{
+        grid-template-columns:1fr;
+      }
+    
+        /* TESTMONIAL */
+      .testmonials{
+    width: 75%;
+    
+      }
+        /* FOOTER */
+      .footer__container{
+        grid-template-columns:1fr 1fr;
+        gap:4rem;
+      }
+    }
+    
+    
+    
+    
+    
+    
+    /*=========================== MEDIA QUERY MEDIUM SCREEN======================== */
+     @media screen and (max-width:600px){
+      /* MAIN HEADER */
+   
+      .main__header{
+        margin-top: 0;
+        padding: 12rem 0 0;
+        height:100vh;
+      }
+      .main__header-image , .main__header-circle{
+        display: none;
+      }
+      .main__header-container{
+        grid-template-columns:1fr;
+      }
+      /*  PROGRAMS */
+     .programs__wrapper{
+      display: grid;
+      grid-template-columns:1fr;
+      gap:2rem;
+      margin-top: 3rem;
+    }
+    .programs__program{
+      width:84%;
+      margin:0 auto;
+    
+    }
+        /* VALUES */
+  .values__wrapper{
+      grid-template-columns:1fr;
+      gap:3rem;
+    
+    }
+    .card.values__value{
+      width:84%;
+      margin-inline:auto;
+    }
+    
+        /* FAQS */
+     .faqs__wrapper{
+      gap:1rem;
+      margin-top: 3rem;
+    }
+        /* TESTMONIAL */
+         .testmonials{
+          width:100%;
+        }
+
+         /* FOOTER */
+    footer{
+        margin-top:7rem;
+    }
+    .footer__container{
+        grid-template-columns:1fr;
+        gap: 3rem;
+    }
+    .footer__container article{
+        align-items:center;
+    
+    }
+    .footer__container article p{
+        text-align:center;
+    }
+    
+    }
