@@ -57,7 +57,8 @@ h4{
 /* =============PROGRAMS=============================================== */
 
 .programs{
-    margin-top:4rem;
+    margin-top:14rem;
+  
 }
 .programs__wrapper{
     display:grid;
@@ -82,10 +83,12 @@ h4{
 /* =============Values============================================== */
 
 .values__container{
+    
     display:grid;
     grid-template-columns: 38% 50%;
     gap:12%;
-    margin-top:10rem;
+    margin-top:14rem;
+    margin-bottom:10rem;
    
 }
 .values__image{
@@ -123,7 +126,8 @@ h4{
 /* =============FAQs============================================== */
 
 .faqs__container{
-    margin-top:4rem;
+    margin-top:14rem;
+    
 
 }
 .faq{
@@ -161,6 +165,8 @@ h4{
 /* =============TESTMONIALS============================================== */
 
 .testmonials{
+    
+    margin-top: 14rem;
     width:40rem;
     margin-inline: auto;
 
@@ -193,7 +199,9 @@ h4{
 .testmonial__quote{
     margin:1rem 0 2rem;
     font-style: italic;
-    font-size:0.8rem;
+    font-size:1rem;
+    font-family: Montserrat serif;
+
 }
 .testmonial__quote:hover{
     color:var(--color-secondary);
@@ -202,18 +210,9 @@ h4{
 }
 .card small.testmonial__title{
 margin-top: 0.3rem;
+color:var(--color-gray-300);
 
 }
-/* .testimonial__btn-container{
-    width: fit-content;
-    margin:2.5rem auto 0;
-    display: flex;
-    align-items: center;
-    background-color:red;
-    margin: 9rem;
-    gap:1;
-
-} */
 .testmonial_btn_container{
     width: fit-content;
    
@@ -227,8 +226,207 @@ margin-top: 0.3rem;
     background-color:transparent;
     margin:0.5rem;
     font-size:3rem;
+    cursor:pointer;
     
 }
 .testmonial_btn svg{
     color: var(--color-primary);
 }
+
+
+
+
+
+
+/* =============FOOTER============================================== */
+
+footer{
+
+    background:var(--color-primary);
+    margin-top:14rem;
+
+    padding-right:2rem;
+    padding: 3rem;
+    font-size:0.9rem;
+    color:var(--color-gray-100);
+    margin-left:-10rem;
+    border-radius: 1rem;
+}
+
+.footer__container{
+    display:grid;
+    grid-template-columns:22rem 1fr 1fr 1fr;
+    gap:3rem;
+   width:100vw;
+
+}
+.footer__container article{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:0.7rem;
+}
+.footer__container article p{
+    margin-top: 0.7rem;
+}
+.footer__container article h4{
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+} 
+.footer__social{
+    margin-top:1rem;
+    gap:1rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer__social a{
+background:var(--color-gray-100);
+padding:0.5rem;
+height: 90%;
+border: 1px solid transparent;
+border-radius: 0.6rem;
+transition: var(--transition);
+
+}
+.footer__social svg{
+    color:var(--color-gray-600);
+}
+.footer__social a:hover{
+    background:transparent ;
+    border: 1px solid var(--color-gray-100);
+    
+}
+.footer__social svg:hover{
+    color:var(--color-secondary);
+}
+.footer__copyright{
+    color:var(--color-gray-100);
+    align-items:center;
+    justify-content:center;
+    border-top: 2px solid var(--color-primary-variant);
+    margin-top: 5rem;
+}
+
+
+/* ========================MEDIA QUERIES(Medium screen) ============================*/
+    @media screen and (max-width:1024px){
+      /* MAIN-HEADER */
+     
+      .main__header{
+        height: fit-content;
+        padding: 12rem 0;
+      }
+      .main__header-container{
+        gap:0;
+      }
+      .main__header-circle{
+        width:16rem;
+        height:16rem;
+      }
+         /* PROGRAMS */
+      .programs__wrapper{
+        grid-template-columns:1fr 1fr;
+    
+      }
+        /* VALUES */
+       .values__container{
+        grid-template-columns:1fr;
+        justify-content:center;
+        gap:4rem;
+      }
+      .values__wrapper{
+        gap:4rem 3rem;
+      }
+      .values__image{
+        display:none;
+      }
+        /* FAQS */
+       .faqs__wrapper{
+        grid-template-columns:1fr;
+      }
+    
+        /* TESTMONIAL */
+      .testmonials{
+    width: 75%;
+    
+      }
+        /* FOOTER */
+      .footer__container{
+        grid-template-columns:1fr 1fr;
+        gap:4rem;
+      }
+    }
+    
+    
+    
+    
+    
+    
+    /*=========================== MEDIA QUERY MEDIUM SCREEN======================== */
+     @media screen and (max-width:600px){
+      /* MAIN HEADER */
+      body{
+        background-color:green;
+      }
+      .main__header{
+        margin-top: 0;
+        padding: 12rem 0 0;
+        height:100vh;
+      }
+      .main__header-image , .main__header-circle{
+        display: none;
+      }
+      .main__header-container{
+        grid-template-columns:1fr;
+      }
+      /*  PROGRAMS */
+     .programs__wrapper{
+      display: grid;
+      grid-template-columns:1fr;
+      gap:2rem;
+      margin-top: 3rem;
+    }
+    .programs__program{
+      width:84%;
+      margin:0 auto;
+    
+    }
+        /* VALUES */
+  .values__wrapper{
+      grid-template-columns:1fr;
+      gap:3rem;
+    
+    }
+    .card.values__value{
+      width:84%;
+      margin-inline:auto;
+    }
+    
+        /* FAQS */
+     .faqs__wrapper{
+      gap:1rem;
+      margin-top: 3rem;
+    }
+        /* TESTMONIAL */
+         .testmonials{
+          width:100%;
+        }
+
+         /* FOOTER */
+    footer{
+        margin-top:7rem;
+    }
+    .footer__container{
+        grid-template-columns:1fr;
+        gap: 3rem;
+    }
+    .footer__container article{
+        align-items:center;
+    
+    }
+    .footer__container article p{
+        text-align:center;
+    }
+    
+    }

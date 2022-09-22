@@ -1,0 +1,43 @@
+.gallery__container{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:2rem;
+}
+.gallery{
+    margin:1rem;
+    border:15px inset var(--color-gray-300);
+    padding:2rem;
+}
+.gallery__container article{
+    border:2px solid transparent;
+    transition:var(--transition);
+}
+.gallery__container article:hover{
+    border:10px solid var(--color-gray-300);
+    border-radius:1rem;
+}
+
+/* ON MEDIUM QUERY WE HAVE 1024 PX */
+@media screen and (max-width:1024px){
+   
+    body{
+        background:red;
+    }
+    .gallery__container{
+        grid-template-columns:1fr 1fr;
+        gap:2rem;
+    }
+    .gallery__container article{
+        border:0;
+    }
+    
+}
+/* 
+ON SMALL DEVICES THIS IS WILL LOOK LIKE */
+@media screen and (max-width:600px) {
+    .gallery__container{
+        grid-template-columns:1fr;
+        gap:3rem;
+        margin-inline: auto;
+    }
+}

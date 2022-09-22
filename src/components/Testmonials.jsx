@@ -13,7 +13,7 @@ function Testmonials() {
 
   const prevTestmonialHandler = () => {
     setIndex((prev) => prev - 1);
-    if (index <= testimonials.length - 1) {
+    if (index <= 0) {
       setIndex(testimonials.length - 1);
     }
   };
@@ -37,9 +37,9 @@ function Testmonials() {
           <div className="testmonial__avatar">
             <img src={avatar} alt={name} />
           </div>
-          <p className="testmonial__quote"> {`${quote}`}</p>
-          <h5>{name}</h5>
-          <small className="testmonial__title">{job}</small>
+          <p className="testmonial__quote"> {`"${quote}"`}</p>
+          <h5>✍️ {name}</h5>
+          <small className="testmonial__title">⚙️ {job}</small>
         </Card>
         <div className="testmonial_btn_container">
           <button className="testmonial_btn">
